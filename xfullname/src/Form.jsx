@@ -29,7 +29,7 @@ export default function Form() {
                 <label htmlFor="lastName">Last Name:</label>
                 <input type="text" required name="lastName" id="lastName" value={lName} onChange={(event) => changeHandler(event)} />
                 <br />
-                <button>Submit</button>
+                <button type="submit">Submit</button>
             </form>
             <p>{fullName ? (`Full Name: ${fullName}`) : ""}</p>
         </>
