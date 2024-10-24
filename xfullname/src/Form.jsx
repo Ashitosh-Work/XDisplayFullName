@@ -31,7 +31,7 @@ export default function Form() {
                 <br />
                 <button type="submit">Submit</button>
             </form>
-            <p>{fullName ? (`Full Name: ${fullName}`) : ""}</p>
+            {fullName ? <p>Full Name: ${fullName}</p> : null}
         </>
     )
 }
