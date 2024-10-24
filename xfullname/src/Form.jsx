@@ -21,7 +21,7 @@ export default function Form() {
 
     return (
         <>
-            <h1>FULL NAME DISPLAY</h1>
+            <h1>Full Name Display</h1>
             <form onSubmit={(event) => submitHandler(event)}>
                 <label htmlFor="firstName">First Name:</label>
                 <input type="text" required name="firstName" id="firstName" value={fName} onChange={(event) => changeHandler(event)} />
@@ -31,7 +31,7 @@ export default function Form() {
                 <br />
                 <button type="submit">Submit</button>
             </form>
-            {fullName ? <p>Full Name: ${fullName}</p> : null}
+            {fullName ? <p>Full Name: {fullName}</p> : null}
         </>
     )
 }
